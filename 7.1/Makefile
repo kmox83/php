@@ -3,7 +3,7 @@
 PHP_VER ?= 7.1
 TAG ?= $(PHP_VER)
 
-REPO = wodby/php
+REPO = eugeniominardi/php
 NAME = php-$(PHP_VER)
 FROM_TAG = 7.1.11
 

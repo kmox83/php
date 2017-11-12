@@ -247,7 +247,8 @@ RUN set -xe && \
         openldap-dev \
         pcre-dev \
         postgresql-dev \
-        yaml-dev && \
+        yaml-dev \
+        gmp && \
 
     docker-php-source extract && \
 
@@ -271,7 +272,8 @@ RUN set -xe && \
         sockets \
         xmlrpc \
         xsl \
-        zip && \
+        zip \
+        gmp && \
 
     # GD
     docker-php-ext-configure gd \

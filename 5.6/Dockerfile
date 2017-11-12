@@ -108,7 +108,8 @@ RUN set -xe && \
         pcre-dev \
         postgresql-dev \
         rabbitmq-c-dev \
-        yaml-dev && \
+        yaml-dev \
+        gmp && \
 
     if [[ $PHP_DEBUG == 1 ]]; then \
         apk add --update --no-cache --virtual .debug-tools gdb; \
@@ -137,7 +138,8 @@ RUN set -xe && \
         sockets \
         xmlrpc \
         xsl \
-        zip && \
+        zip \
+        gmp && \
 
     # GD
     docker-php-ext-configure gd \

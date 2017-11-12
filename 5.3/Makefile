@@ -3,7 +3,7 @@
 PHP_VER ?= 5.3
 TAG ?= $(PHP_VER)
 
-REPO = wodby/php
+REPO = eugeniominardi/php
 NAME = php-$(PHP_VER)
 
 .PHONY: build test push shell run start stop logs clean release
